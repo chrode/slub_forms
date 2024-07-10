@@ -257,7 +257,7 @@ class FieldValidator extends \TYPO3\CMS\Extbase\Validation\Validator\AbstractVal
                                 }
                             }
                             break;
-                                                 default:
+                        default:
                             if ($singleField->getRequired()) {
                                 if (empty($getfields[$singleField->getUid()])) {
                                     $error = $this->objectManager->get(\TYPO3\CMS\Extbase\Error\Error::class, 'val_default', 2000);
